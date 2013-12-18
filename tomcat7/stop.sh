@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 . $DIR/env.sh
 
-TOMCAT_PID=`ps aux | grep "org.apache.catalina.startup.Bootstrap start" | grep -v grep | awk '{print $2}'`
+TOMCAT_PID=`ps aux | grep "SMLPAASTOMCAT7" | grep -v grep | awk '{print $2}'`
 
 if [[ -z "$TOMCAT_PID" ]]
 then
